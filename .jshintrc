@@ -1,0 +1,6 @@
+{
+  "camelcase"     : true,
+  "evil"          : true,
+  "browser"       : true,
+  "loopfunc"      : true
+}
