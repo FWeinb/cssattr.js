@@ -14,6 +14,7 @@ NodeObserver.prototype = {
   },
 
   add : function (node, attr, filter) {
+      var styleGenerator =  this.styleGenerator;
       var observer = new this.mutationObserver(function (mutationList) {
           var styles = {},
           styleMap = [{
@@ -24,7 +25,7 @@ NodeObserver.prototype = {
               var mutation = mutationList[i],
                   attrName = mutation.attributeName;
               if (node.getAttribute(attrName) !== mutation.oldValue) {
-                  resolveFuncList(node, styles, attr[attrName]);
+                  styleGenerator.resolveFuncList(node, styles, attr[attrName]);
               }
           }
           styleGenerator.apply(styleMap);
