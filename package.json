@@ -5,7 +5,7 @@
 
   "author": "Fabrice Weinberg",
 
-  "repository": "",
+  "repository": "https://github.com/FWeinb/cssattr.js",
   "license": "MIT",
 
   "devDependencies": {
