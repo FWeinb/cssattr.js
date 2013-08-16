@@ -34,10 +34,11 @@ This polyfill makes it possible to use `attr()` like it is defined in the [spec]
 
 ## Project Structure
 
+  ```
   cssattr.js
     |---|--dev   # a compiled version (Just Temp)
         |--dist  # release version
         |--src   # source files
         |--test  # place for test. Names like [*].test.js
-
+  ```
 
