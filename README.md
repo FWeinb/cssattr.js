@@ -17,8 +17,8 @@ This polyfill makes it possible to use `attr()` like it is defined in the [spec]
   * Can't use attr() on :before, :after
   * It's not tested if the browser supports the `attr()` function according to spec (none as of writing)
 
-## Build/Testing/Devloping
-  Grunt is used for Building/Testing/Devloping
+## Build/Testing/Developing
+  Grunt is used for Building/Testing/Developing
 
   Build run:
 
