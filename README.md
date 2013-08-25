@@ -7,6 +7,12 @@ This polyfill makes it possible to use `attr()` like it is defined in the [spec]
 
 [Demo](http://codepen.io/FWeinb/pen/Dsdkr)
 
+## Usage
+
+  ```
+
+  ```
+
 ## What is working
 
   * `attr()` function is parsed spec conform
@@ -16,6 +22,8 @@ This polyfill makes it possible to use `attr()` like it is defined in the [spec]
 
   * Can't use attr() on :before, :after
   * It's not tested if the browser supports the `attr()` function according to spec (none as of writing)
+  * Dosn't take @media into account
+  * Not working in @keyframes
 
 ## Build/Testing/Developing
   Grunt is used for Building/Testing/Developing

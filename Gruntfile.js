@@ -67,6 +67,10 @@ module.exports = function (grunt) {
           },
           dev : {
             background: true
+          },
+          headless : {
+            browsers : ['PhantomJS'],
+            singleRun: true
           }
         },
         watch : {
@@ -83,9 +87,10 @@ module.exports = function (grunt) {
 
     require('load-grunt-tasks')(grunt);
 
-    grunt.registerTask('build',     ['concat:dist', 'jshint:dist', 'test', 'uglify']);
-    grunt.registerTask('devBuild',  ['concat:dev', 'jshint:dev']);
-    grunt.registerTask('test',      ['devBuild' ,'karma:dist']);
-    grunt.registerTask('dev',       ['devBuild', 'karma:dev', 'watch' ]);
+    grunt.registerTask('build',             ['concat:dist', 'jshint:dist', 'test', 'uglify']);
+    grunt.registerTask('devBuild',          ['concat:dev', 'jshint:dev']);
+    grunt.registerTask('test',              ['devBuild' ,'karma:dist']);
+    grunt.registerTask('testHeadless',      ['devBuild' ,'karma:headless']);
+    grunt.registerTask('dev',               ['devBuild', 'karma:dev', 'watch' ]);
 
 };
