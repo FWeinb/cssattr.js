@@ -1,6 +1,9 @@
 CSS attr() polyfill
 ------------------------
 
+[![Build Status](https://travis-ci.org/FWeinb/cssattr.js.png?branch=master)](https://travis-ci.org/FWeinb/cssattr.js)
+
+
 This polyfill makes it possible to use `attr()` like it is defined in the [spec](http://www.w3.org/TR/2013/CR-css3-values-20130730/#attr).
 
 ## Live Demo
