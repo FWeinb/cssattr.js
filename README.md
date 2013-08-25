@@ -10,7 +10,14 @@ This polyfill makes it possible to use `attr()` like it is defined in the [spec]
 ## Usage
 
   ```
-
+    // Get CSS for all styles
+    var styleNode = document.querySelectorAll('style'),
+        css = '';
+    for (var i = 0; i < styleNode.length; i++) {
+        css += styleNode[i].innerHTML;
+    }
+    //Parse the CSS, show it and observe for changes.
+    cssattr.parse(css).show().observe();
   ```
 
 ## What is working
@@ -44,7 +51,7 @@ This polyfill makes it possible to use `attr()` like it is defined in the [spec]
 
   ```
   cssattr.js
-    |---|--dev   # a compiled version (Just Temp)
+    |---|--dev   # a compiled version (just temp)
         |--dist  # release version
         |--src   # source files
         |--test  # place for test. Names like [*].test.js
